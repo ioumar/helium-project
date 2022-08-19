@@ -1,0 +1,268 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+
+@font-face
+{
+	src: url("./assets/police/SpaceGrotesk-VariableFont_wght.ttf");
+	font-family: font-1;
+}
+
+body
+{
+	background: #2d3436;
+}
+
+#bloc-page
+{
+	background: #2d3436;
+	color: white;
+	width: 70%;
+	margin: 0 auto;
+	padding: 15px;
+}
+
+/*--------------------------------------------------header------------------------------------------------*/
+
+header
+{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 50px;
+	padding-top: 30px;
+}
+
+header h3
+{
+	width: 40%;
+	font-family: font-1, sans-serif, serif;
+}
+
+header nav
+{
+	width: 60%;
+	text-align: center;
+}
+
+header nav ul 
+{
+	list-style: none;
+	display: flex;
+	justify-content: space-between;
+
+}
+header li 
+{
+	width: 100%;
+	font-family: font-1, sans-serif, serif;
+	padding: 5px;
+	transition: 0.5s ease;
+}
+
+header li:hover
+{
+	background: white;
+	color: black;
+	cursor: pointer;
+}
+
+/*----------------------------------------------Section-------------------------------------------------*/
+
+section
+{
+	display: flex;
+	align-items: center;
+}
+
+.section-left, .section-right
+{
+	width: 50%;
+	margin-bottom: 30px;
+}
+
+.section-left h1
+{
+	font-family: font-1, sans-serif, serif;
+	font-size: 4rem;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
+.section-left h3
+{
+	font-family: font-1, sans-serif, serif;
+	font-size: 1.4rem;
+	font-weight: bold;
+	margin-bottom: 20px;
+	color: blue;
+}
+
+.section-left p 
+{
+	font-family: font-1, sans-serif, serif;
+	font-size: 0.8rem;
+	width: 100%;
+}
+
+.section-right img
+{
+	width: 90%;
+	margin-bottom: 30px;
+}
+
+/*-------------------------------------------------footer-----------------------------------------------*/
+
+footer
+{
+	display: grid;
+	grid-template-columns: 35% 1fr;
+	background: black;
+	border-radius: 12px;
+	padding: 15px;
+}
+
+.footer-left
+{
+	display: flex;
+	flex-direction: column;
+}
+
+.footer-left h3
+{
+	margin-bottom: 10px;
+}
+
+.footer-left button
+{
+	border: none;
+	border-radius: 8px;
+	text-align: center;
+	width: 45%;
+	padding: 8px;
+	margin-bottom: 5px;
+	background: blue;
+	font-family: font-1, sans-serif, serif;
+	font-size: 0.9rem;
+	font-weight: bold;
+	color: white;
+	transition: 0.6s;
+}
+
+.footer-left button:hover
+{
+	cursor: pointer;
+	background: #74b9ff;
+}
+
+.footer-right h3
+{
+	margin-bottom: 40px;
+}
+
+.footer-right ul
+{
+	display: flex;
+	justify-content: space-around;
+	list-style: none;
+}
+
+.footer-right img
+{
+	height: 40px;
+	
+}
+
+/*-----------------------------------------Responsive Design--------------------------------------------*/
+
+@media screen and (max-width: 900px)
+{
+	.footer-left button
+	{
+		width: 50%;
+		margin: 3px auto;
+	} 
+	.footer-right ul
+	{
+		flex-direction: column;
+		justify-content: space-between;
+	}
+
+	.footer-right img
+	{
+		margin: 15px;
+	}
+
+
+}
+
+
+@media screen and (max-width: 1000px)
+{
+
+	header nav
+	{
+		width: 70%;
+	}
+
+
+	section
+	{
+		flex-direction: column-reverse;
+	}
+
+	.section-left, .section-right
+	{
+		width: 100%;
+		text-align: center;
+	}
+
+	.section-left p 
+	{
+		margin: 0 auto;
+	}
+
+	.section-right img
+	{
+		min-width: 70%;
+		margin-bottom: 30px;
+	}
+	footer
+	{
+		grid-template-columns: 1fr;
+		text-align: center;
+	}
+
+	.footer-left
+	{
+		margin-bottom: 10px;
+	}
+
+	.footer-left button
+	{
+		width: 30%;
+		margin: 3px auto;
+	} 
+
+
+}
+
+@media screen and (max-width: 1024px)
+{
+	.section-left h1
+	{
+		font-size: 3rem;
+	}
+
+	.section-left h3
+	{
+		font-size: 1.3rem;
+	}
+
+	.section-left p 
+	{
+		font-size: 0.8rem;
+		width: 90%;
+	}
+}
